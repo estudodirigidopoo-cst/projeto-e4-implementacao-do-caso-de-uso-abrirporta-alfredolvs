@@ -3,9 +3,15 @@
 
 	class Usuario{
 
+		private:
+		string nome;
+		string senha;
+
 		public:
 
-			Usuario();
+			Usuario(string meuNome, string minhaSenha) {nome = meuNome; senha = minhaSenha; };
+			string getNome() {return nome;}
+			string getSenha() {return senha;}
 			~Usuario();
 
 };

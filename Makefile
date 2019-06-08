@@ -1,20 +1,23 @@
-controle: InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o
-	g++ InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o -o controle
+controle: Main.o InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o
+	g++ InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o Main.o -o controle
 
-InterfacePorta.o: InterfacePorta.h InterfacePorta.cc
-		g++ -c InterfacePorta.cc
+InterfacePorta.o: InterfacePorta.h InterfacePorta.cpp
+		g++ -c InterfacePorta.cpp
 
-ControladorAcesso.o: ControladorAcesso.h ControladorAcesso.cc
-		g++ -c ControladorAcesso.cc
+ControladorAcesso.o: ControladorAcesso.h ControladorAcesso.cpp
+		g++ -c ControladorAcesso.cpp
 
-ListaSalas.o: ListaSalas.h ListaSalas.cc
-		g++ -c ListaSalas.cc
+ListaSalas.o: ListaSalas.h ListaSalas.cpp
+		g++ -c ListaSalas.cpp
 
-Sala.o: Sala.h Sala.cc
-		g++ -c Sala.cc
+Sala.o: Sala.h Sala.cpp
+		g++ -c Sala.cpp
 
-ListaUsuario.o: ListaUsuario.h ListaUsuario.cc
-		g++ -c ListaUsuario.cc
+ListaUsuario.o: ListaUsuario.h ListaUsuario.cpp
+		g++ -c ListaUsuario.cpp
 
-Usuario.o: Usuario.h Usuario.cc
-		g++ -c Usuario.cc
+Usuario.o: Usuario.h Usuario.cpp
+		g++ -c Usuario.cpp
+
+Main.o: Main.cpp
+	g++ -c Main.cpp

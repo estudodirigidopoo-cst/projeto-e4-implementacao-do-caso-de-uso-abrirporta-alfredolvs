@@ -12,7 +12,7 @@
 			Usuario(string meuNome, string minhaSenha) {nome = meuNome; senha = minhaSenha; };
 			string getNome() {return nome;}
 			string getSenha() {return senha;}
-			~Usuario();;
+			~Usuario();
 
 };
 

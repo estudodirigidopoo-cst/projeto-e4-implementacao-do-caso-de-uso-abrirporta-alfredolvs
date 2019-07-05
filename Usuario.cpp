@@ -1,7 +1,7 @@
 #include "Usuario.h"
 
-	Usuario::Usuario()
-
+Usuario::Usuario(string meuNome, string minhaSenha)
 {
-
+ nome = meuNome; 
+ senha = minhaSenha;
 }

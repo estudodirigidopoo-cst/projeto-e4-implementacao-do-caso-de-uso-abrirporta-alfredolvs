@@ -1,5 +1,5 @@
-controle: Main.o InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o
-	g++ InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o Main.o -o controle
+controle: Main.o InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o SalaUsuario.o
+	g++ InterfacePorta.o ControladorAcesso.o ListaSalas.o Sala.o ListaUsuario.o Usuario.o SalaUsuario.o Main.o -o controle
 
 InterfacePorta.o: InterfacePorta.h InterfacePorta.cpp
 		g++ -c InterfacePorta.cpp
@@ -18,6 +18,9 @@ ListaUsuario.o: ListaUsuario.h ListaUsuario.cpp
 
 Usuario.o: Usuario.h Usuario.cpp
 		g++ -c Usuario.cpp
+
+SalaUsuario.o: SalaUsuario.h SalaUsuario.cpp
+		g++ -c SalaUsuario.cpp
 
 Main.o: Main.cpp
 	g++ -c Main.cpp

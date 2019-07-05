@@ -10,4 +10,6 @@
 
 };
 
+extern ControladorAcesso ContAcesso;
+
 #endif

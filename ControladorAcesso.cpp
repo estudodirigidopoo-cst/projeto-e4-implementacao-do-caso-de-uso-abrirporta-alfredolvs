@@ -3,5 +3,9 @@
 	ControladorAcesso::ControladorAcesso()
 
 {
+}
+	ControladorAcesso::~ControladorAcesso()
+
+{
 
 }

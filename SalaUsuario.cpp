@@ -12,7 +12,7 @@ TabSalaUsuarios.insert(pair <string, string> ("CAD1", "RobertPlantId"));
  
 void SalaUsuario::printSalasUsuario()
 {
-  multimap <string, string> :: iterator itr; //Declaração do iterator (uma espécie de ponteiro para o container
+  multimap <string, string> :: iterator itr; 
   for (itr = TabSalaUsuarios.begin(); itr != TabSalaUsuarios.end(); ++itr) 
   { 
         std::cout  <<  '\t' << itr->first <<  '\t' << itr->second << '\n'; 
@@ -21,7 +21,7 @@ void SalaUsuario::printSalasUsuario()
  
 bool SalaUsuario::isInSala(string sala, string nome)
 {
-  multimap <string, string> :: iterator itr; //Declaração do iterator (uma espécie de ponteiro para o container
+  multimap <string, string> :: iterator itr; 
   for (itr = TabSalaUsuarios.find(sala); itr != TabSalaUsuarios.end(); itr++) {
      if (itr->second == nome) {
         return true;

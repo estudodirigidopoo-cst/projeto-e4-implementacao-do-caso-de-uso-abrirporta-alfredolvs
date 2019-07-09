@@ -1,7 +1,10 @@
 #include "ListaSalas.h"
 
-	ListaSalas::ListaSalas()
+	ListaSalas::ListaSalas(string idSala)
 
 {
-
+    sala = idSala
 }
+
+
+

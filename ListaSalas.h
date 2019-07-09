@@ -12,10 +12,9 @@ using namespace std;
 
 		public:
 
-			ListaSalas();
+			ListaSalas(string idSala);
 
-			ListaSalas (string sala);
-
+			
 			~ListaSalas();
 
 			bool abrirPorta(string sala);

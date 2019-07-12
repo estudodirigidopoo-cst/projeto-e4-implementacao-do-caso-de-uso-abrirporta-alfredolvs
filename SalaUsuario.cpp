@@ -28,5 +28,5 @@ bool SalaUsuario::isInSala(string sala, string nome)
      }
   }
   return false;
-
+//
 }
